@@ -1,14 +1,13 @@
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { featureLists, goodLists } from "../../constants"
-import { useMediaQuery } from "react-responsive"
-
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 const Vision = () => {
-    const isMobile = useMediaQuery({ maxWidth: 767});
+
 
     useGSAP(() => {
-        const start = isMobile ? 'top 20%' : 'top top'
 
         const maskTimeLine = gsap.timeline({
             scrollTrigger: {
@@ -54,8 +53,8 @@ const Vision = () => {
                     ))}
                 </ul> 
 
-                <div className="cocktail-img">
-                    <img src="/images/logo-colour.png" alt="cocktail" className="abs-center masked-img size-full object-contain"  />
+                <div className="logo-img">
+                    <img src="/images/logo-colour.png" alt="logo" className="abs-center masked-img size-full object-contain"  />
                 </div>
 
                 <ul className="space-y-4 will-fade">
@@ -76,6 +75,7 @@ const Vision = () => {
             </div>
         </div>
     </div>
+    
   )
 }
 

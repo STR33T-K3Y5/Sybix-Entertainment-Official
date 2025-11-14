@@ -23,14 +23,11 @@ const navLinks = [
 const featureLists = [
  "Become a worldwide entertainment powerhouse",
  "Transform raw talent into global influence",
- "Drive innovation and creativity in all endeavours"
 ];
 
 const goodLists = [
  "Build a sustainable, tech-driven City of talent",
  "Connect creators, storytellers, and entrepreneurs",
- "Support growth across all entertainment disciplines",
- "Enable collaboration and innovation through technology",
 ];
 
 
