@@ -13,7 +13,7 @@ const Vision = () => {
         const maskTimeLine = gsap.timeline({
             scrollTrigger: {
                 trigger: "#vision",
-                start,
+                start: "top top",
                 end: "bottom bottom",
                 scrub: 1,
                 pin: true,
